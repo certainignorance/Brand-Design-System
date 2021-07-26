@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+JP DESIGN SYSTEM: RESPONSIVE COLOR
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# COLOR PALETTE
+
+# DEFAULT COLOR ARRANGEMENTS
+--------------------------------------------------------------*/
+
+:root {
+/* Color Palette  */
+  --primary-0: rgba(227, 78,143,1);	/* Main Primary color (pink) saturated  */
+  --primary-1: rgba(252,251,251,1); /* lighter */
+  --primary-2: rgba(241,162,196,1);
+  --primary-3: rgba(223,  0, 98,1);
+  --primary-4: rgba(158,  0, 69,1); /* darker */
+
+  --complement-0: rgba(173,240, 82,1);	/* Main Primary Complement color (green) saturated  */
+  --complement-1: rgba(253,253,253,1); /* lighter */
+  --complement-2: rgba(213,247,166,1);
+  --complement-3: rgba(137,237,  0,1);
+  --complement-4: rgba( 99,171,  0,1); /* darker */
+
+  --secondary-0: rgba(255,206, 88,1);	/* Main Secondary color (orange) saturated  */
+  --secondary-1: rgba(255,255,255,1); /* lighter */
+  --secondary-2: rgba(255,230,172,1);
+  --secondary-3: rgba(255,180,  0,1);
+  --secondary-4: rgba(186,132,  0,1); /* darker */
+
+  --secondary-complement-0: rgba( 83,104,197,1);	/* Main Secondary Complement color (blue) saturated */
+  --secondary-complement-1: rgba(248,248,248,1); /* lighter */
+  --secondary-complement-2: rgba(161,172,226,1);
+  --secondary-complement-3: rgba( 23, 52,189,1);
+  --secondary-complement-4: rgba(  5, 27,127,1); /* darker */
+
+/* Default Color Arrangements  */
+    --main-background-color: var(--secondary-complement-0);
+    --main-background-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
+    --main-background-reverse-gradient: 135deg, var(--secondary-complement-4) 0%, var(--secondary-complement-0) 50%, var(--primary-4) 100%;
+    --main-complement-color: var(--secondary-1);
+    --main-complement-gradient: 135deg, var(--secondary-complement-1) 0%, var(--secondary-1) 100%;
+    --main-focus-color:  var(--primary-0);
+    --main-focus-gradient: 135deg, var(--secondary-3) 0%, var(--primary-0) 100%;
+    --main-highlight-color:  var(--secondary-0);
+    --main-highlight-gradient: 135deg, var(--primary-0) 0%, var(--secondary-3) 100%;
+
+    --surface-background-color: var(--secondary-1);
+    --surface-background-gradient: 135deg, var(--secondary-1) 0%, var(--secondary-complement-1) 50%, var(--primary-1) 100%;
+    --surface-background-reverse-gradient: 135deg, var(--primary-1) 0%, var(--secondary-complement-1) 50%, var(--secondary-1) 100%;
+    --surface-complement-color: var(--secondary-complement-4);
+    --surface-complement-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
+    --surface-focus-color:  var(--primary-0);
+    --surface-focus-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
+
+}
