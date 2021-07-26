@@ -11,12 +11,12 @@ JP DESIGN SYSTEM: RESPONSIVE TYPOGRAPHY
 	@import url("https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap") screen;
 
 :root {
-	/* Typography Default Mobile Varibles */
+	/* Typography Default Mobile / Tall Screen Varibles */
 	--default: inherit; /* inherits whatever its 'parent' characteristics are */
 	
 	/* default text characteristics */
 	--text-font: 'Raleway', Helvetica, Arial, sans-serif;
-	--text-size: calc(14px + 2vw); /* default text size is equal to 2% of the width of display window + 14px */
+	--text-size: calc(14px + 2vw); /* default text size is equal to 2% of the width of display window + 14px (sets minimum text size for accessibility and still maintains a responsive text size) */
 	--text-weight: 400;
 	--text-spacing: 0.05em; /* spacing between characters is 0.05 x CURRENT text size */
 	--text-lineheight: 1.4em; /* vertical spacing for text height is 1.5x CURRENT(em) text size */ 
@@ -127,9 +127,9 @@ JP DESIGN SYSTEM: RESPONSIVE TYPOGRAPHY
 		--input-weight: 900;		
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 37.5rem) {
 	:root {
-	/* Typography Default DESKTOP Varible Changes */
+	/* Typography Default DESKTOP / Wide Display Varible Changes */
 		
 	/* default text characteristics */
 	--text-size: calc(14px + 0.5vw); /* default DESKTOP text size is equal to 0.5% of the width of display window + 14px */
