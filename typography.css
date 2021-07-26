@@ -1,2 +1,138 @@
+/*--------------------------------------------------------------
+JP DESIGN SYSTEM: RESPONSIVE TYPOGRAPHY
+
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+	
+/* Imports  */
 	/* Google Fonts  */
 	@import url("https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap") screen;
+
+:root {
+	/* Typography Default Mobile Varibles */
+	--default: inherit; /* inherits whatever its 'parent' characteristics are */
+	
+	/* default text characteristics */
+	--text-font: 'Raleway', Helvetica, Arial, sans-serif;
+	--text-size: calc(14px + 2vw); /* default text size is equal to 2% of the width of display window + 14px */
+	--text-weight: 400;
+	--text-spacing: 0.05em; /* spacing between characters is 0.05 x CURRENT text size */
+	--text-lineheight: 1.4em; /* vertical spacing for text height is 1.5x CURRENT(em) text size */ 
+	
+	/* default Header text characteristics */
+		--header-font: var(--default);
+		--header-size: 1.67rem; /* default header = default text size x 1.67 */
+		--header-weight: 900;
+		--header-lineheight: 1.17em;
+	
+		--h1-font: var(--header-font);
+		--h1-size: var(--header-size); /* same as default header size */
+		--h1-weight: var(--header-weight);
+		--h1-lineheight: var(--header-lineheight);
+	
+		--h2-font: var(--header-font);
+		--h2-size: 1.5rem;
+		--h2-weight: var(--header-weight);
+		--h2-lineheight: var(--header-lineheight);
+	
+		--h3-font: var(--header-font);
+		--h3-size: 1.17rem;
+		--h3-weight: var(--header-weight);
+		--h3-lineheight: var(--header-lineheight);
+	
+	
+		--h4-font: var(--header-font);
+		--h4-size: 1.17rem;
+		--h4-weight: var(--header-weight);
+		--h4-lineheight: var(--header-lineheight);
+	
+		--h5-font: var(--header-font);
+		--h5-size: 1.17rem;
+		--h5-weight: var(--header-weight);
+		--h5-lineheight: var(--header-lineheight);
+	
+		--h6-font: var(--header-font);
+		--h6-size: 1.17rem;
+		--h6-weight: var(--header-weight);
+		--h6-lineheight: var(--header-lineheight);
+	
+	/* default layout text characteristics */
+		--logo-font: var(--default);
+		--logo-size: var(--default);
+		--logo-weight: var(--default);
+		--logo-lineheight: var(--default);
+
+		--title-font: var(--default);
+		--title-size: var(--default);
+		--title-lineheight: var(--default);
+
+		--hero-font: var(--default);
+		--hero-size: var(--default);
+		--hero-lineheight: var(--default);
+	
+		--footer-font: var(--default);
+		--footer-size: var(--default);
+		--footer-lineheight: var(--default);
+
+		--social-font: var(--default);
+		--social-size: var(--default);
+		--social-lineheight: var(--default);
+	
+	/* default characteristics */
+	
+		--link-font: var(--default);
+		--link-size: var(--default);
+		--link-weight: 900;
+	
+		--linkhover-font: var(--link-font);
+		--linkhover-size: var(--link-size);
+		--linkhover-weight: var(--link-weight);	
+	
+		--linkactive-font: var(--link-font);
+		--linkactive-size: var(--link-size);
+		--linkactive-weight: var(--link-weight);	
+	
+		--italic-font: var(--default);
+		--italic-size: var(--default);
+		--italic-weight: var(--default);
+	
+		--bold-font: var(--default);
+		--bold-size: var(--default);
+		--bold-weight: 900;
+	
+		--big-font: var(--default);
+		--big-size: 1.25em;
+		--big-weight: var(--default);
+	
+		--small-font: var(--default);
+		--small-size: 0.75em;
+		--small-weight: var(--default);
+	
+		--quote-font: var(--default);
+		--quote-size: var(--big-size);
+		--quote-weight: var(--default);
+
+		--code-font: var(--default);
+		--code-size: var(--small-size);
+		--code-weight: var(--default);
+
+		--list-font: var(--default);
+		--list-size: var(--default);
+		--list-weight: var(--default);
+	
+		--input-font: var(--default);
+		--input-size: var(--default);
+		--input-weight: 900;		
+}
+
+@media screen and (min-width: 37.5em) {
+	:root {
+	/* Typography Default DESKTOP Varible Changes */
+		
+	/* default text characteristics */
+	--text-size: calc(14px + 0.5vw); /* default DESKTOP text size is equal to 0.5% of the width of display window + 14px */
+		
+	}
+}
