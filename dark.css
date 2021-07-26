@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+JP DESIGN SYSTEM: RESPONSIVE DARK MODE 
+by Jeremy Platt
+
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# DARK MODE COLOR ARRANGEMENT
+--------------------------------------------------------------*/
+
+/* Dark Mode Color Arrangement */
+
+@media(prefers-color-scheme:dark) {
+	:root {
+    /* Color varibles defined in color.css */
+    --main-background-color: var(--primary-4);
+		--main-background-gradient: 135deg, var(--secondary-0) -60%, var(--primary-4) 30%;
+    --main-background-reverse-color: var(--secondary-0);
+    --main-background-reverse-gradient: 135deg, var(--secondary-0) -20%, var(--primary-4) 50%;
+    --main-complement-color: var(--secondary-1);
+    --main-complement-gradient: 135deg, var(--secondary-complement-1) 0%, var(--secondary-1) 100%;
+    --main-focus-color: var(--secondary-3);
+    --main-focus-gradient: 135deg, var(--primary-3) -40%, var(--secondary-3) 50%;
+    --main-highlight-color: var(--secondary-complement-4);
+    --main-highlight-gradient: 135deg, var(--secondary-3) 0%, var(--secondary-0) 100%;
+    --surface-background-color: var(--secondary-0);
+    --surface-background-gradient: 135deg, var(--primary-4) -80%, var(--secondary-0) 20%;
+    --surface-background-reverse-gradient: 135deg, var(--secondary-0) -80%, var(--primary-4) 20%;
+    --surface-complement-color: var(--primary-4);
+    --surface-complement-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
+    --surface-focus-color: var(--secondary-complement-4);
+    --surface-focus-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
+    --surface-highlight-color:  var(--primary-0);
+    --surface-highlight-gradient: 135deg, var(--primary-0) 0%, var(--primary-3) 100%;
+	}
+}
