@@ -1,2 +1,2 @@
 # Brand Design System
-## for Jeremy Platt
+### for Jeremy Platt
