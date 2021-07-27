@@ -13,7 +13,7 @@ by Jeremy Platt
 @media(prefers-color-scheme:dark) {
 	:root {
 	    /* Color varibles defined in color.css */
-		--text-color: var(--text-light);
+	    --text-color: var(--text-light);
 		
 	    --main-background-color: var(--primary-dark);
 	    --main-background-gradient: 135deg, var(--secondary-light) -60%, var(--primary-dark) 30%;
