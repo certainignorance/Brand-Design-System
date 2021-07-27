@@ -22,17 +22,17 @@ by Jeremy Platt
 	--text-font: 'Raleway', Helvetica, Arial, sans-serif;
 	--text-size: calc(14px + 2vw); /* default text size is equal to 2% of the width of display window + 14px (sets minimum text size for accessibility and still maintains a responsive text size) */
 	--text-weight: 400;
-	--text-spacing: 0.05em; /* spacing between characters is 0.05 x CURRENT text size */
-	--text-lineheight: 1.4em; /* vertical spacing for text height is 1.5x CURRENT(em) text size */ 
+	--text-spacing: 0.35em; /* spacing between characters is 35% of CURRENT text size (ideal for dyslexia) */
+	--text-lineheight: 1.5em; /* vertical spacing for text height is 1.5x CURRENT(em) text size (ideal for dyslexia)*/ 
 	
 	/* default Header text characteristics */
 		--header-font: var(--default);
-		--header-size: 1.67rem; /* default header = default text size x 1.67 */
+		--header-size: 1.2rem; /* default header = default text size x 1.2 or %20 bigger for readibility */
 		--header-weight: 900;
 		--header-lineheight: 1.17em;
 	
 		--h1-font: var(--header-font);
-		--h1-size: var(--header-size); /* same as default header size */
+		--h1-size: 1.67rem;
 		--h1-weight: var(--header-weight);
 		--h1-lineheight: var(--header-lineheight);
 	
@@ -42,23 +42,23 @@ by Jeremy Platt
 		--h2-lineheight: var(--header-lineheight);
 	
 		--h3-font: var(--header-font);
-		--h3-size: 1.17rem;
+		--h3-size: var(--header-size);
 		--h3-weight: var(--header-weight);
 		--h3-lineheight: var(--header-lineheight);
 	
 	
 		--h4-font: var(--header-font);
-		--h4-size: 1.17rem;
+		--h4-size: var(--header-size);
 		--h4-weight: var(--header-weight);
 		--h4-lineheight: var(--header-lineheight);
 	
 		--h5-font: var(--header-font);
-		--h5-size: 1.17rem;
+		--h5-size: var(--header-size);
 		--h5-weight: var(--header-weight);
 		--h5-lineheight: var(--header-lineheight);
 	
 		--h6-font: var(--header-font);
-		--h6-size: 1.17rem;
+		--h6-size: var(--header-size);
 		--h6-weight: var(--header-weight);
 		--h6-lineheight: var(--header-lineheight);
 	
@@ -98,19 +98,23 @@ by Jeremy Platt
 		--linkactive-size: var(--link-size);
 		--linkactive-weight: var(--link-weight);	
 	
-		--italic-font: var(--default);
+		--italic-font: var(--default); /* avoid underline & slant to keep readibility */
 		--italic-size: var(--default);
 		--italic-weight: var(--default);
+	
+		--underline-font: var(--default); /* avoid underline & slant to keep readibility */
+		--underline-size: var(--default);
+		--underline-weight: var(--default);
 	
 		--bold-font: var(--default);
 		--bold-size: var(--default);
 		--bold-weight: 900;
 	
-		--big-font: var(--default);
+		--big-font: var(--default); /* avoid all uppercase to keep readibility */
 		--big-size: 1.25em;
 		--big-weight: var(--default);
 	
-		--small-font: var(--default);
+		--small-font: var(--default); /* avoid all small capitalization to keep readibility */
 		--small-size: 0.75em;
 		--small-weight: var(--default);
 	
