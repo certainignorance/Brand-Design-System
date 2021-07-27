@@ -140,7 +140,8 @@ by Jeremy Platt
 	
 		--input-font: var(--default);
 		--input-size: var(--default);
-		--input-weight: 900;		
+		--input-weight: 900;
+		--input-lineheight: var(--default);
 }
 
 @media screen and (min-width: 37.5rem) {
