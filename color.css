@@ -5,54 +5,71 @@ by Jeremy Platt
 
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# COLOR PALETTE
+# COLOR PALETTE HUES
+# COLOR PALETTE HSL
+# COLOR PALETTE GRADIENTS
+# COLOR PALETTE TEXT
 
 # DEFAULT COLOR ARRANGEMENTS
 --------------------------------------------------------------*/
 
 :root {
-/* Color Palette  */
-  --primary-0: rgba(227, 78,143,1);	/* Main Primary color (pink) saturated  */
-  --primary-1: rgba(252,251,251,1); /* lighter */
-  --primary-2: rgba(241,162,196,1);
-  --primary-3: rgba(223,  0, 98,1);
-  --primary-4: rgba(158,  0, 69,1); /* darker */
+/*  Color Palette Hues  */
+  --primary-hue: 323;
+  --secondary-hue: calc( var(--primary-hue) + 70 );
+  --primary-comp-hue: calc( var(--primary-hue) + 180 );
+  --secondary-comp-hue: calc( var(--primary-hue) + 250 );
+ 
+/*  Color Palette Hue Saturation Light  */
+  --primary: hsl(var(--primary-hue), 70%, 70%);
+  --secondary: hsl(var(--secondary-hue), 70%, 70%);
+  --primary-comp: hsl(var(--primary-comp-hue), 70%, 70%);
+  --secondary-comp: hsl(var(--secondary-comp-hue), 70%, 70%);
 
-  --complement-0: rgba(173,240, 82,1);	/* Main Primary Complement color (green) saturated  */
-  --complement-1: rgba(253,253,253,1); /* lighter */
-  --complement-2: rgba(213,247,166,1);
-  --complement-3: rgba(137,237,  0,1);
-  --complement-4: rgba( 99,171,  0,1); /* darker */
-
-  --secondary-0: rgba(255,206, 88,1);	/* Main Secondary color (orange) saturated  */
-  --secondary-1: rgba(255,255,255,1); /* lighter */
-  --secondary-2: rgba(255,230,172,1);
-  --secondary-3: rgba(255,180,  0,1);
-  --secondary-4: rgba(186,132,  0,1); /* darker */
-
-  --secondary-complement-0: rgba( 83,104,197,1);	/* Main Secondary Complement color (blue) saturated */
-  --secondary-complement-1: rgba(248,248,248,1); /* lighter */
-  --secondary-complement-2: rgba(161,172,226,1);
-  --secondary-complement-3: rgba( 23, 52,189,1);
-  --secondary-complement-4: rgba(  5, 27,127,1); /* darker */
+  --primary-light: hsl(var(--primary-hue), 70%, 95%);
+  --secondary-light: hsl(var(--secondary-hue), 70%, 95%);
+  --primary-comp-light: hsl(var(--primary-comp-hue), 70%, 95%);
+  --secondary-comp-light: hsl(var(--secondary-comp-hue), 70%, 95%);
+  
+   --primary-dark: hsl(var(--primary-hue), 70%, 25%);
+  --secondary-dark: hsl(var(--secondary-hue), 70%, 25%);
+  --primary-comp-dark: hsl(var(--primary-comp-hue), 70%, 25%);
+  --secondary-comp-dark: hsl(var(--secondary-comp-hue), 70%, 25%); 
+  
+   --primary-sat: hsl(var(--primary-hue), 70%, 50%);
+  --secondary-sat: hsl(var(--secondary-hue), 70%, 50%);
+  --primary-comp-sat: hsl(var(--primary-comp-hue), 70%, 50%);
+  --secondary-comp-sat: hsl(var(--secondary-comp-hue), 70%, 50%);   
+  
+/*  Color Palette Gradients   */
+--primary-gradient: linear-gradient(0.25turn, var(--secondary-sat), var(--primary-sat), var(--secondary-comp-sat));
+--secondary-gradient: linear-gradient(0.25turn, var(--secondary-sat), var(--primary-sat));  
+--third-gradient: linear-gradient(0.25turn, var(--secondary-comp-sat), var(--primary-comp-sat)); 
+--fourth-gradient: linear-gradient(0.25turn, var(--secondary-comp-sat), var(--primary-sat)); 
+  
+  
+/*  Color Palette Text  */
+--text-dark: hsl(var(--primary-hue), 70%, 5%);  
+--text-light: hsl(var(--primary-hue), 70%, 95%); 
+}
 
 /* Default Color Arrangements  */
-    --main-background-color: var(--secondary-complement-0);
-    --main-background-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
-    --main-background-reverse-gradient: 135deg, var(--secondary-complement-4) 0%, var(--secondary-complement-0) 50%, var(--primary-4) 100%;
-    --main-complement-color: var(--secondary-1);
-    --main-complement-gradient: 135deg, var(--secondary-complement-1) 0%, var(--secondary-1) 100%;
-    --main-focus-color:  var(--primary-0);
-    --main-focus-gradient: 135deg, var(--secondary-3) 0%, var(--primary-0) 100%;
-    --main-highlight-color:  var(--secondary-0);
-    --main-highlight-gradient: 135deg, var(--primary-0) 0%, var(--secondary-3) 100%;
+    --main-background-color: var(--secondary-comp-light);
+    --main-background-gradient: 135deg, var(--primary-dark) 0%, var(--secondary-comp-light) 50%, var(--secondary-comp-dark) 100%;
+    --main-background-reverse-gradient: 135deg, var(--secondary-comp-dark) 0%, var(--secondary-comp-light) 50%, var(--primary-dark) 100%;
+    --main-complement-color: var(--secondary);
+    --main-complement-gradient: 135deg, var(--secondary-comp) 0%, var(--secondary) 100%;
+    --main-focus-color:  var(--primary-light);
+    --main-focus-gradient: 135deg, var(--secondary-sat) 0%, var(--primary-light) 100%;
+    --main-highlight-color:  var(--secondary-light);
+    --main-highlight-gradient: 135deg, var(--primary-light) 0%, var(--secondary-sat) 100%;
 
-    --surface-background-color: var(--secondary-1);
-    --surface-background-gradient: 135deg, var(--secondary-1) 0%, var(--secondary-complement-1) 50%, var(--primary-1) 100%;
-    --surface-background-reverse-gradient: 135deg, var(--primary-1) 0%, var(--secondary-complement-1) 50%, var(--secondary-1) 100%;
-    --surface-complement-color: var(--secondary-complement-4);
-    --surface-complement-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
-    --surface-focus-color:  var(--primary-0);
-    --surface-focus-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
+    --surface-background-color: var(--secondary);
+    --surface-background-gradient: 135deg, var(--secondary) 0%, var(--secondary-complement) 50%, var(--primary) 100%;
+    --surface-background-reverse-gradient: 135deg, var(--primary) 0%, var(--secondary-comp) 50%, var(--secondary) 100%;
+    --surface-complement-color: var(--secondary-comp-dark);
+    --surface-complement-gradient: 135deg, var(--primary-dark) 0%, var(--secondary-comp-light) 50%, var(--secondary-comp-dark) 100%;
+    --surface-focus-color:  var(--primary-light);
+    --surface-focus-gradient: 135deg, var(--primary-dark) 0%, var(--secondary-comp-light) 50%, var(--secondary-comp-dark) 100%;
 
 }
