@@ -12,25 +12,27 @@ by Jeremy Platt
 
 @media(prefers-color-scheme:dark) {
 	:root {
-    /* Color varibles defined in color.css */
-    --main-background-color: var(--primary-4);
-		--main-background-gradient: 135deg, var(--secondary-0) -60%, var(--primary-4) 30%;
-    --main-background-reverse-color: var(--secondary-0);
-    --main-background-reverse-gradient: 135deg, var(--secondary-0) -20%, var(--primary-4) 50%;
-    --main-complement-color: var(--secondary-1);
-    --main-complement-gradient: 135deg, var(--secondary-complement-1) 0%, var(--secondary-1) 100%;
-    --main-focus-color: var(--secondary-3);
-    --main-focus-gradient: 135deg, var(--primary-3) -40%, var(--secondary-3) 50%;
-    --main-highlight-color: var(--secondary-complement-4);
-    --main-highlight-gradient: 135deg, var(--secondary-3) 0%, var(--secondary-0) 100%;
-    --surface-background-color: var(--secondary-0);
-    --surface-background-gradient: 135deg, var(--primary-4) -80%, var(--secondary-0) 20%;
-    --surface-background-reverse-gradient: 135deg, var(--secondary-0) -80%, var(--primary-4) 20%;
-    --surface-complement-color: var(--primary-4);
-    --surface-complement-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
-    --surface-focus-color: var(--secondary-complement-4);
-    --surface-focus-gradient: 135deg, var(--primary-4) 0%, var(--secondary-complement-0) 50%, var(--secondary-complement-4) 100%;
-    --surface-highlight-color:  var(--primary-0);
-    --surface-highlight-gradient: 135deg, var(--primary-0) 0%, var(--primary-3) 100%;
+	    /* Color varibles defined in color.css */
+		--text-color: var(--text-light);
+		
+	    --main-background-color: var(--primary-dark);
+	    --main-background-gradient: 135deg, var(--secondary-light) -60%, var(--primary-dark) 30%;
+	    --main-background-reverse-color: var(--secondary-light);
+	    --main-background-reverse-gradient: 135deg, var(--secondary-light) -20%, var(--primary-dark) 50%;
+	    --main-complement-color: var(--secondary);
+	    --main-complement-gradient: 135deg, var(--secondary-comp) 0%, var(--secondary) 100%;
+	    --main-focus-color: var(--secondary-sat);
+	    --main-focus-gradient: 135deg, var(--primary-sat) -40%, var(--secondary-sat) 50%;
+	    --main-highlight-color: var(--secondary-comp-dark);
+	    --main-highlight-gradient: 135deg, var(--secondary-sat) 0%, var(--secondary-light) 100%;
+	    --surface-background-color: var(--secondary-light);
+	    --surface-background-gradient: 135deg, var(--primary-dark) -80%, var(--secondary-light) 20%;
+	    --surface-background-reverse-gradient: 135deg, var(--secondary-light) -80%, var(--primary-dark) 20%;
+	    --surface-comp-color: var(--primary-dark);
+	    --surface-comp-gradient: 135deg, var(--primary-dark) 0%, var(--secondary-comp-light) 50%, var(--secondary-comp-dark) 100%;
+	    --surface-focus-color: var(--secondary-comp-dark);
+	    --surface-focus-gradient: 135deg, var(--primary-dark) 0%, var(--secondary-comp-light) 50%, var(--secondary-comp-dark) 100%;
+	    --surface-highlight-color:  var(--primary-light);
+	    --surface-highlight-gradient: 135deg, var(--primary-light) 0%, var(--primary-sat) 100%;
 	}
 }
