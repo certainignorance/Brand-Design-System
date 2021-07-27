@@ -87,7 +87,7 @@ by Jeremy Platt
 		--hero-lineheight: var(--default);
 	
 		--footer-font: var(--default);
-		--footer-size: var(--default);
+		--footer-size: calc(14px + 0.1vw);
 		--footer-lineheight: var(--default);
 
 		--social-font: var(--default);
