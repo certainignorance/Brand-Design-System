@@ -13,33 +13,32 @@ by Jeremy Platt
 # DEFAULT COLOR ARRANGEMENTS
 --------------------------------------------------------------*/
 
-:root {
 /*  Color Palette Hues  */
---primary-hue: 323;
---secondary-hue: calc( var(--primary-hue) + 70 );
---primary-comp-hue: calc( var(--primary-hue) + 180 );
---secondary-comp-hue: calc( var(--primary-hue) + 250 );
-
+  --primary-hue: 323;
+  --secondary-hue: calc( var(--primary-hue) + 60 );
+  --primary-comp-hue: calc( var(--primary-hue) + 210 );
+  --secondary-comp-hue: calc( var(--primary-hue) + 270 );
+ 
 /*  Color Palette Hue Saturation Light  */
---primary: hsl(var(--primary-hue), 70%, 70%);
---secondary: hsl(var(--secondary-hue), 70%, 70%);
---primary-comp: hsl(var(--primary-comp-hue), 70%, 70%);
---secondary-comp: hsl(var(--secondary-comp-hue), 70%, 70%);
+  --primary: hsl(var(--primary-hue), 60%, 70%);
+  --secondary: hsl(var(--secondary-hue), 60%, 70%);
+  --primary-comp: hsl(var(--primary-comp-hue), 60%, 70%);
+  --secondary-comp: hsl(var(--secondary-comp-hue), 60%, 70%);
 
---primary-light: hsl(var(--primary-hue), 70%, 95%);
---secondary-light: hsl(var(--secondary-hue), 70%, 95%);
---primary-comp-light: hsl(var(--primary-comp-hue), 70%, 95%);
---secondary-comp-light: hsl(var(--secondary-comp-hue), 70%, 95%);
-
---primary-dark: hsl(var(--primary-hue), 70%, 25%);
---secondary-dark: hsl(var(--secondary-hue), 70%, 25%);
---primary-comp-dark: hsl(var(--primary-comp-hue), 70%, 25%);
---secondary-comp-dark: hsl(var(--secondary-comp-hue), 70%, 25%); 
-
---primary-sat: hsl(var(--primary-hue), 70%, 50%);
---secondary-sat: hsl(var(--secondary-hue), 70%, 50%);
---primary-comp-sat: hsl(var(--primary-comp-hue), 70%, 50%);
---secondary-comp-sat: hsl(var(--secondary-comp-hue), 70%, 50%);   
+  --primary-light: hsl(var(--primary-hue), 60%, 97%);
+  --secondary-light: hsl(var(--secondary-hue), 60%, 97%);
+  --primary-comp-light: hsl(var(--primary-comp-hue), 60%, 97%);
+  --secondary-comp-light: hsl(var(--secondary-comp-hue), 60%, 97%);
+  
+   --primary-dark: hsl(var(--primary-hue), 60%, 25%);
+  --secondary-dark: hsl(var(--secondary-hue), 60%, 25%);
+  --primary-comp-dark: hsl(var(--primary-comp-hue), 60%, 25%);
+  --secondary-comp-dark: hsl(var(--secondary-comp-hue), 60%, 25%); 
+  
+   --primary-sat: hsl(var(--primary-hue), 60%, 55%);
+  --secondary-sat: hsl(var(--secondary-hue), 60%, 55%);
+  --primary-comp-sat: hsl(var(--primary-comp-hue), 60%, 55%);
+  --secondary-comp-sat: hsl(var(--secondary-comp-hue), 60%, 55%);    
   
 /*  Color Palette Gradients   */
 --primary-gradient: linear-gradient(0.25turn, var(--secondary-sat), var(--primary-sat), var(--secondary-comp-sat));
