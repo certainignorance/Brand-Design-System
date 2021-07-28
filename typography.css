@@ -19,6 +19,7 @@ by Jeremy Platt
 /* Imports  */
 	/* Google Fonts  */
 	@import url("https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap") screen;
+	/* Font Awesome Icons  */
 	@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css') screen;
 
 
@@ -33,7 +34,7 @@ by Jeremy Platt
 	--text-spacing: 0.05em; /* spacing between characters is 35% of CURRENT text size (ideal for dyslexia) */
 	--text-lineheight: 1.5em; /* vertical spacing for text height is 1.5x CURRENT(em) text size (ideal for dyslexia)*/ 
 	
-	/* default Header text characteristics */
+		/* default Header text characteristics */
 		--header-font: var(--default);
 		--header-size: 1.2rem; /* default header = default text size x 1.2 or %20 bigger for readibility */
 		--header-weight: 900;
@@ -70,7 +71,7 @@ by Jeremy Platt
 		--h6-weight: var(--header-weight);
 		--h6-lineheight: var(--header-lineheight);
 	
-	/* default layout text characteristics */
+		/* default layout text characteristics */
 		--logo-font: var(--default);
 		--logo-size: 2rem;
 		--logo-weight: 900;
@@ -95,7 +96,7 @@ by Jeremy Platt
     --social-weight: var(--default);
 		--social-lineheight: var(--default);
 	
-	/* default characteristics */
+		/* default characteristics */
 	
 		--link-font: var(--default);
 		--link-size: var(--default);
